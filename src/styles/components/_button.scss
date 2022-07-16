@@ -1,0 +1,99 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+/* stylelint-disable */
+#{$buttons} {
+  @extend %resetButton;
+}
+
+%btn {
+  display: inline-block;
+  vertical-align: top;
+  color: $btn-color;
+  padding: $btn-padding;
+  font-size: $btn-font-size;
+  line-height: $btn-line-height;
+  font-weight: $btn-font-weight;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn {
+  @include animate(background);
+  @extend %btn;
+
+  &:hover {
+    background: $orange;
+    color: $black;
+  }
+  
+  &--grad {
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.2);
+  
+      &:before {
+      content: '';
+      position: absolute; 
+      visibility: hidden;
+      background: $gradient;
+      transform: translate(10%, 20%);
+      filter: blur(20px);
+      opacity: 0.8; 
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+    }
+    
+    &:hover::before {
+      visibility: visible;
+    }
+
+    &:hover {
+      background: $white;
+    }
+  }
+  
+  &--black {
+    border: 2px solid $black;
+    padding: 16px 69px 16px 77px;
+    border-radius: 10px;
+    
+    @include media('>=tablet') {
+      padding: 16px 50px 16px 60px;
+    }
+  } 
+  
+  &--blue {
+    border: 2px solid $blue-00;
+    padding: 12px 68px 10px 77px;;
+    border-radius: 10px;
+    
+    @include media('>=tablet') {
+      padding: 11px 49px 11px 58px;
+    }
+  } 
+  
+  &--fill {
+    font-weight: 700;
+    background-color: $orange;
+    padding: 16px 64px;
+    border-radius: 10px;
+  
+    &:hover {
+      background: $blue-00;
+      color: $white;
+    }
+  } 
+}
+
+.btn-decor {
+  vertical-align: middle;
+  font-size: 24px;
+  margin-left: 2px;
+}

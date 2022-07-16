@@ -1,0 +1,174 @@
+@import 'variables';
+/* stylelint-disable */
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?yuzzw2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'],
+%icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cheveron-right {
+  &:before {
+    content: $icon-cheveron-right; 
+  }
+}
+.icon-grup {
+  &:before {
+    content: $icon-grup; 
+  }
+}
+.icon-pause {
+  &:before {
+    content: $icon-pause; 
+  }
+}
+.icon-point {
+  &:before {
+    content: $icon-point; 
+  }
+}
+.icon-console {
+  &:before {
+    content: $icon-console; 
+  }
+}
+.icon-man {
+  &:before {
+    content: $icon-man; 
+  }
+}
+.icon-stopwatch {
+  &:before {
+    content: $icon-stopwatch; 
+  }
+}
+.icon-chess {
+  &:before {
+    content: $icon-chess; 
+  }
+}
+.icon-party {
+  &:before {
+    content: $icon-party; 
+  }
+}
+.icon-family {
+  &:before {
+    content: $icon-family; 
+  }
+}
+.icon-chess1 {
+  &:before {
+    content: $icon-chess1; 
+  }
+}
+.icon-chess2 {
+  &:before {
+    content: $icon-chess2; 
+  }
+}
+.icon-chess3 {
+  &:before {
+    content: $icon-chess3; 
+  }
+}
+.icon-chess4 {
+  &:before {
+    content: $icon-chess4; 
+  }
+}
+.icon-book {
+  &:before {
+    content: $icon-book; 
+  }
+}
+.icon-board {
+  &:before {
+    content: $icon-board; 
+  }
+}
+.icon-teacher {
+  &:before {
+    content: $icon-teacher; 
+  }
+}
+.icon-mechanics {
+  &:before {
+    content: $icon-mechanics; 
+  }
+}
+.icon-mail {
+  &:before {
+    content: $icon-mail; 
+  }
+}
+.icon-point2 {
+  &:before {
+    content: $icon-point2; 
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone; 
+  }
+}
+.icon-chess5 {
+  &:before {
+    content: $icon-chess5; 
+  }
+}
+.icon-triangle2 {
+  &:before {
+    content: $icon-triangle2; 
+  }
+}
+.icon-circle2 {
+  &:before {
+    content: $icon-circle2; 
+  }
+}
+.icon-cross2 {
+  &:before {
+    content: $icon-cross2; 
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook; 
+  }
+}
+.icon-youtube {
+  &:before {
+    content: $icon-youtube; 
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram; 
+  }
+}
+.icon-telegram {
+  &:before {
+    content: $icon-telegram; 
+  }
+}
+
+

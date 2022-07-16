@@ -1,0 +1,435 @@
+.current-section {
+  padding: 0 0 100px;
+
+  .container {
+    @include media('<tablet') {
+      padding: 0 10px;
+    }
+  }
+
+  .section-heading {
+    max-width: 260px;
+    margin-bottom: 35px;
+
+    @include media('>=tablet') {
+      max-width: 750px;
+    }
+
+    &__title {
+      @include media('<tablet') {
+        font-size: 18px;
+        line-height: 1.3;
+      }
+    }
+  }
+}
+
+.digital-inform {
+  margin: 0 0 13px;
+
+  @include media('>=tablet') {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 -10px 78px;
+  }
+
+  &__column {
+    margin: 0 0 35px;
+
+    @include media('>=tablet') {
+      margin: 0;
+      padding: 0 10px;
+    }
+  }
+
+  &__column:last-child {
+    margin: 0;
+  }
+
+  &__holder {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  &__holder-first {
+    @include media('>=tablet') {
+      margin-right: 60px;
+    }
+    
+    @include media('>=desktop') {
+      margin-right: 90px;
+    }
+  }
+
+  &__holder-second {
+    @include media('>=tablet') {
+      max-width: 180px;
+      margin-right: 40px;
+    }
+    
+    @include media('>=desktop') {
+      margin-right: 60px;
+    }
+  }
+
+  &__digital {
+    display: block;
+    font-size: 68px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 0.8;
+    background: $gradient;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    @include media('>=desktop') {
+      font-size: 86px;
+      letter-spacing: 9px;
+      line-height: 1.3;
+    }
+
+    &--last {
+      @include media('<tablet') {
+        letter-spacing: 4px;
+      }
+    }
+  }
+
+  
+  &__text {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    @include media('>=desktop') {
+      font-size: 20px;
+      line-height: 1.3;
+    }
+
+    &--last {
+      @include media('<tablet') {
+        line-height: 2.3;
+      }
+    }
+  }
+
+}
+
+.current-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px 20px;
+
+  &__current-card {
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  &__current-card-left {
+    display: flex;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    
+    @include media('>=desktop') {
+      width: 42%;
+      margin-bottom: 0;
+    }
+  }
+
+  &__current-card-right {
+    @include media('>=tablet') {
+      padding: 0 10px;
+    }
+    
+    @include media('>=desktop') {
+      display: flex;
+      flex-wrap: wrap;
+      width: 58%;
+    }
+  }
+
+  &__inner-right {
+    @include media('>=tablet') {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+    }
+  }
+
+  &__inner-card-top {
+    padding: 0 10px;
+    margin-bottom: 20px;
+    
+    @include media('>=tablet') {
+      display: flex;
+      width: 50%;
+    }
+  } 
+  
+  &__inner-card-bottom {
+    width: 100%;
+    padding: 0 10px;
+
+    @include media('>=tablet') {
+      display: flex;
+      padding: 0;
+    }
+  } 
+}
+
+.open-day {
+  background: $orange-f7;
+  border-radius: 10px;
+  padding: 21px 20px;
+  margin-bottom: 18px;
+  box-shadow: 3px 0 15px 3px rgba(0, 0, 0, 0.2);
+  
+  @include media('>=tablet') {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 20px;
+    padding: 15px 40px;
+  }
+  
+  @include media('>=desktop') {
+    flex-direction: row;
+    padding: 30px 35px 25px;
+  }
+
+  &__inner {
+    
+    @include media('>=tablet') {
+      padding: 0 0 0 160px;
+    }
+
+    @include media('>=desktop') {
+      padding: 0 196px 0 160px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    margin-bottom: 33px;
+    
+    @include media('>=desktop') {
+      margin-bottom: 27px;
+    }
+  }
+
+  &__date {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 24px 0 0;
+    
+    @include media('>=tablet') {
+      position: absolute;
+      left: 40px;
+      top: 15px;
+      padding: 0;
+    }
+    
+    @include media('>=desktop') {
+      top: 30px;      
+    }
+  }
+
+  &__number {
+    display: block;
+    font-size: 63px;
+    font-weight: 700;
+    line-height: 0.73;
+    
+    @include media('>=tablet') {
+      font-size: 95px;
+    }
+  }
+
+  &__month {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.7;
+    
+    @include media('>=tablet') {
+      font-size: 29px;      
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 18px;
+    
+    @include media('>=desktop') {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    p {
+      @include media('>=tablet') {
+        margin: 0;
+      }
+    }
+  }
+
+  &__text-title {
+    display: block;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1;
+    
+    @include media('>=tablet') {
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 0.8;
+    }
+  }
+}
+
+.studying-programs {
+  background: $gray-c5;
+  border-radius: 10px;
+  padding: 30px 18px 20px;
+  text-align: center;
+  box-shadow: 3px 0 15px 3px rgba(0, 0, 0, 0.2);
+  
+  @include media('>=tablet') {
+    min-width: 100%;
+    border-radius: 20px;
+    padding: 35px 45px 50px;
+  }
+
+  &__img {
+    min-height: 100px;
+    
+    @include media('>=tablet') {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: 22px;
+    
+    @include media('>=tablet') {
+      margin-bottom: 33px;
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    margin-bottom: 21px;
+    line-height: 1.5;
+    
+    @include media('>=tablet') {
+      margin-bottom: 48px;
+    }
+  }
+  
+  &--news {
+    background: $gray-b8;
+    padding: 30px 35px 5px;
+    
+    @include media('>=laptop') {
+      padding: 35px 40px 20px;
+      min-height: 220px;
+      min-width: 330px;
+    }
+
+    .studying-programs__img {
+      min-height: 90px;
+      
+      @include media('>=tablet') {
+        min-height: 100px;
+      }
+    }
+    
+    .studying-programs__link {
+      margin-bottom: 20px;
+    }
+  }
+  
+  &--world {
+    background: $gray-ff;
+    padding: 30px 30px 5px;
+    
+    @include media('>=tablet') {
+      min-height: 220px;
+      min-width: 100%;
+      padding: 30px 90px 20px;
+      
+    }
+
+    @include media('>=laptop') {
+      min-width: 330px;
+      padding: 35px 45px 20px;
+    }
+
+    .studying-programs__img {
+      min-height: 90px;
+
+      @include media('>=tablet') {
+        min-height: 100px;
+      }
+    }
+
+    .studying-programs__link {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--test {
+    background: $orange-8e;
+    padding: 24px 10px 17px 20px;
+    text-align: left;
+    position: relative;
+    
+    @include media('>=tablet') {
+      padding: 53px 10px 50px 25px;
+    }
+
+    .studying-programs__img {
+      position: absolute;
+      width: 60px;
+      top: 20px;
+      left: 20px;
+
+      @include media('>=tablet') {
+        width: 100px;
+        top: 65px;
+        left: 45px;
+      }
+    }
+
+    .studying-programs__title {
+      padding-left: 79px;
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      margin-bottom: 45px;
+
+      @include media('>=tablet') {
+        padding: 0 0 0 175px;
+        letter-spacing: 0;
+      }
+    }
+    
+    .studying-programs__text {
+      margin-bottom: 0;
+      text-align: left;
+
+      @include media('>=tablet') {
+        padding: 0 100px 0 175px;
+      }
+    }
+
+    .studying-programs__link {
+      margin-bottom: 20px;
+    }
+  }
+}

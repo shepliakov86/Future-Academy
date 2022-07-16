@@ -1,0 +1,7 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+@include fontface('montserrat', 'Montserrat-Regular', 400, normal);
+@include fontface('montserrat', 'Montserrat-Medium', 500, normal);
+@include fontface('montserrat', 'Montserrat-SemiBold', 600, normal);
+@include fontface('montserrat', 'Montserrat-Bold', 700, normal);
