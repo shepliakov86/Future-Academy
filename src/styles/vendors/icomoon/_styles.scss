@@ -30,6 +30,11 @@
     content: $icon-cheveron-right; 
   }
 }
+.icon-star {
+  &:before {
+    content: $icon-star; 
+  }
+}
 .icon-grup {
   &:before {
     content: $icon-grup; 
@@ -170,5 +175,3 @@
     content: $icon-telegram; 
   }
 }
-
-
