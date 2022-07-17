@@ -194,7 +194,6 @@
   }
 
   &__link {
-    
     @include media('<desktop') {
       @include animate(background margin);
       display: inline-block;
@@ -205,7 +204,6 @@
 
       &:after,
       &:before {
-        transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, top 0.25s ease-in-out 0.3s;
         content: '';
         position: absolute;
         height: 2px;
@@ -213,16 +211,11 @@
         right: 0;
         background: $blue-00;
       }
-
+      
       &:after {
+        transition: transform 0.1s ease-in-out, top 0.1s ease-in-out 0.1s;
         transform: rotateZ(90deg) scale(1.05);
         top: 10px;
-      }
-
-      &:after:hover {
-        top: 10px;
-        transition: background 0.3s ease-in-out, top 0.25s, transform 0.3s ease 0.3s;
-        transform: rotateZ(0deg) scale(1.05);
       }
 
       &:before {
@@ -269,6 +262,20 @@
 
     &:before {
       top: 23px;
+    }
+  }
+}
+
+.active {
+  .menu {
+    &__link {
+      @include media('<desktop') {
+        &:after {
+          top: 10px;
+          transition: top 0.1s, transform 0.1s ease 0.1s;
+          transform: rotateZ(0deg) scale(1.05);
+        }
+      }
     }
   }
 }

@@ -1,0 +1,18 @@
+.feedback-section {
+  padding: 100px 0;
+  background: $blue-00;
+
+  &__cards {
+    display: flex;
+    margin: 0 -10px;
+  }
+
+  &__card {
+    padding: 0 10px;
+  }
+}
+
+.students-card {
+  padding: 20px 20px 30px 25px;
+  background: $white;
+}
